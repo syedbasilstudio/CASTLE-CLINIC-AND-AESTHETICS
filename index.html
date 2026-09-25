@@ -284,6 +284,7 @@ header.nav.scrolled .menu-toggle span{background:var(--plum);}
 .menu-row:hover{background:rgba(163,149,135,.08);}
 .menu-row .mr-name{font-family:var(--serif);font-size:1.35rem;color:var(--plum);font-weight:400;flex:0 1 auto;}
 .menu-row .mr-sub{font-size:.78rem;color:var(--taupe);letter-spacing:.04em;margin-top:.2rem;}
+.menu-row .mr-desc{font-size:.82rem;color:var(--muted);font-weight:300;margin-top:.3rem;max-width:52ch;}
 .menu-row .mr-dots{flex:1;border-bottom:1px dotted rgba(163,149,135,.5);transform:translateY(-4px);margin:0 .6rem;}
 .menu-row .mr-price{font-family:var(--serif);font-size:1.35rem;color:var(--burgundy);white-space:nowrap;}
 .menu-row .mr-price .pound{transition:font-weight .4s var(--ease);}
@@ -651,13 +652,13 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
     <div class="featured-grid reveal">
       <div class="feat-card">
         <div class="ft-name">Lip Filler</div>
-        <div class="ft-price"><span class="pound">£</span>120 <span style="font-size:.8rem;color:var(--taupe)">/ 0.5ml</span> &nbsp;&middot;&nbsp; <span class="pound">£</span>150 <span style="font-size:.8rem;color:var(--taupe)">/ 1.1ml</span></div>
+        <div class="ft-price"><span class="pound">£</span>120 <span style="font-size:.8rem;color:var(--taupe)">/ 0.5ml</span> &nbsp;&middot;&nbsp; <span class="pound">£</span>150 <span style="font-size:.8rem;color:var(--taupe)">/ 1ml</span></div>
         <div class="ft-desc">Subtle definition and natural-looking fullness, tailored to your features.</div>
         <a class="ft-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book <span class="arr">&rarr;</span></a>
       </div>
       <div class="feat-card">
         <div class="ft-name">Jaw Filler</div>
-        <div class="ft-price"><span class="pound">£</span>120</div>
+        <div class="ft-price"><span class="pound">£</span>150</div>
         <div class="ft-desc">Refined contour and definition along the jawline.</div>
         <a class="ft-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book <span class="arr">&rarr;</span></a>
       </div>
@@ -707,27 +708,33 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
 
     <!-- Dermal Fillers + Anti-Wrinkle (Facial Aesthetics) -->
     <div class="menu-panel active" data-cat="dermal">
-      <h3 style="font-size:1.3rem;color:var(--burgundy);margin-bottom:.5rem;font-weight:400;">Dermal Fillers</h3>
-      <div class="menu-row"><div><div class="mr-name">Jaw Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Cheek Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Chin Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>100</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Nasal Folds</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Consultation</div><div class="mr-sub">20 minutes</div></div><div class="mr-dots"></div><div class="mr-price">Free</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <h3 style="font-size:1.3rem;color:var(--burgundy);margin:2.4rem 0 .5rem;font-weight:400;">Dermal Fillers</h3>
+      <div class="menu-row"><div><div class="mr-name">Jaw Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Cheek Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Chin Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Nasal Folds</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Filler</div><div class="mr-sub">0.5ml</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Lip Filler</div><div class="mr-sub">1.1ml</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Lip Filler</div><div class="mr-sub">1ml</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Filler Dissolve</div></div><div class="mr-dots"></div><div class="mr-price">From <span class="pound">£</span>90</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
 
+      <div class="menu-row"><div><div class="mr-name">3ml Filler</div><div class="mr-sub">Multi-area volumisation</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>350</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">5ml Filler</div><div class="mr-sub">Full-face volumisation</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>550</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+
       <h3 style="font-size:1.3rem;color:var(--burgundy);margin:2.4rem 0 .5rem;font-weight:400;">Anti-Wrinkle Injections</h3>
-      <div class="menu-row"><div><div class="mr-name">Forehead, Frown Lines &amp; Crows Feet</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>180</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Forehead &amp; Frown Lines</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>160</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Crows Feet</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>140</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">3 Areas &mdash; Forehead, Frown Lines &amp; Crows Feet</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>220</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">2 Areas &mdash; Forehead &amp; Frown Lines</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>200</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">1 Area &mdash; Any One Of The Above</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>180</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Brow Lift</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>80</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Cobbled Chin</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>80</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Flip</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>80</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Lower Face Jaw Slimming</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>220</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
     </div>
 
     <!-- Skin Boosters -->
     <div class="menu-panel" data-cat="skin">
       <h3 style="font-size:1.3rem;color:var(--burgundy);margin-bottom:.5rem;font-weight:400;">Skin Boosters</h3>
+      <p style="font-size:.85rem;color:var(--taupe);font-style:italic;margin:.2rem 0 .8rem;">Skin boosters from £120</p>
       <div class="menu-row"><div><div class="mr-name">Lumi Eyes</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Seventy Hyal</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>145</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Profhilo</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>195</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
@@ -741,7 +748,6 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
       <h3 style="font-size:1.3rem;color:var(--burgundy);margin:2.4rem 0 .5rem;font-weight:400;">B12 / Vitamin Injections</h3>
       <div class="menu-row"><div><div class="mr-name">B12 Injection</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>25</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">B12 Injection</div><div class="mr-sub">Course of 5</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>100</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Vitamin C Injection</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>30</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
     </div>
 
     <!-- Lashes -->
@@ -1200,16 +1206,16 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
 
   var flow={
     lips:{q:'What would you like to achieve?',opts:[
-      {l:'More definition',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Filler',s:'1.1ml',p:'£150'}]},
-      {l:'Fuller appearance',t:[{n:'Lip Filler',s:'1.1ml',p:'£150'},{n:'Lip Filler',s:'0.5ml',p:'£120'}]},
-      {l:'Explore options',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Filler',s:'1.1ml',p:'£150'},{n:'Lip Flip',p:'£80'}]},
+      {l:'More definition',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Filler',s:'1ml',p:'£150'}]},
+      {l:'Fuller appearance',t:[{n:'Lip Filler',s:'1ml',p:'£150'},{n:'Lip Filler',s:'0.5ml',p:'£120'}]},
+      {l:'Explore options',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Filler',s:'1ml',p:'£150'},{n:'3ml Filler',p:'£350'},{n:'Lip Flip',p:'£80'}]},
       {l:'Not sure',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Flip',p:'£80'}]}
     ]},
     antiwrinkle:{q:'What would you like to achieve?',opts:[
-      {l:'Smoother forehead',t:[{n:'Forehead & Frown Lines',p:'£160'},{n:'Forehead, Frown & Crows Feet',p:'£180'}]},
-      {l:'Soften lines',t:[{n:'Crows Feet',p:'£140'},{n:'Forehead & Frown Lines',p:'£160'}]},
+      {l:'Smoother forehead',t:[{n:'2 Areas — Forehead & Frown',p:'£200'},{n:'3 Areas',p:'£220'}]},
+      {l:'Soften lines',t:[{n:'1 Area',p:'£180'},{n:'2 Areas — Forehead & Frown',p:'£200'}]},
       {l:'Brow lift',t:[{n:'Brow Lift',p:'£80'}]},
-      {l:'Explore options',t:[{n:'Brow Lift',p:'£80'},{n:'Lip Flip',p:'£80'},{n:'Crows Feet',p:'£140'}]}
+      {l:'Explore options',t:[{n:'1 Area',p:'£180'},{n:'2 Areas',p:'£200'},{n:'Lower Face Jaw Slimming',p:'£220'}]}
     ]},
     skin:{q:'What would you like to achieve?',opts:[
       {l:'Brighter-looking skin',t:[{n:'Lumi Eyes',p:'£120'},{n:'Seventy Hyal',p:'£145'}]},
@@ -1232,15 +1238,14 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
     body:{q:'What would you like to achieve?',opts:[
       {l:'Fat dissolve',t:[{n:'Fat Dissolve Injections',s:'Lemon Bottle or Lipolax',p:'From £50'}]},
       {l:'B12 energy',t:[{n:'B12 Injection',p:'£25'},{n:'B12 Course of 5',p:'£100'}]},
-      {l:'Vitamin C',t:[{n:'Vitamin C Injection',p:'£30'}]},
-      {l:'Explore options',t:[{n:'Fat Dissolve Injections',p:'From £50'},{n:'B12 Injection',p:'£25'},{n:'Vitamin C Injection',p:'£30'}]}
+      {l:'Explore options',t:[{n:'Fat Dissolve Injections',p:'From £50'},{n:'B12 Injection',p:'£25'}]}
     ]},
     unsure:{q:'What would you like to improve?',opts:[
       {l:'My lips',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Flip',p:'£80'}]},
-      {l:'Lines & wrinkles',t:[{n:'Forehead & Frown Lines',p:'£160'},{n:'Crows Feet',p:'£140'}]},
+      {l:'Lines & wrinkles',t:[{n:'1 Area Anti-Wrinkle',p:'£180'},{n:'2 Areas Anti-Wrinkle',p:'£200'}]},
       {l:'My skin',t:[{n:'Lumi Eyes',p:'£120'},{n:'Profhilo',p:'£195'}]},
       {l:'My lashes & brows',t:[{n:'Lash Lift & Tint',p:'£40'},{n:'Brow Lamination with Tint',p:'£40'}]},
-      {l:'Still deciding',t:[{n:'Book a Consultation',p:'via Fresha'}]}
+      {l:'Still deciding',t:[{n:'Consultation',s:'Free · 20 mins',p:'via Fresha'}]}
     ]}
   };
   var selCat=null;
@@ -1271,6 +1276,58 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
   }
   document.querySelectorAll('.conc-back').forEach(function(b){
     b.addEventListener('click', function(){ showStep(parseInt(b.getAttribute('data-back'),10)); });
+  });
+
+  /* ---- Treatment descriptions ---- */
+  var descs={
+    'Consultation':'A relaxed 20-minute chat about your goals, with honest advice on the right treatment for you.',
+    'Jaw Filler':'Defines and sculpts the jawline for a sharper, more balanced profile.',
+    'Cheek Filler':'Restores soft volume to the cheeks and gently lifts the mid-face.',
+    'Chin Filler':'Refines the chin to balance your side profile.',
+    'Nasal Folds':'Softens the lines that run from the nose to the corners of the mouth.',
+    'Lip Filler':'Adds natural-looking volume, shape and hydration, tailored to you.',
+    '3ml Filler':'A multi-area treatment — for example lips, cheeks and jaw — in a single visit.',
+    '5ml Filler':'Full-face volumisation to restore overall balance and harmony.',
+    'Lip Filler Dissolve':'Gently removes unwanted lip filler to restore your natural shape.',
+    '3 Areas — Forehead, Frown Lines & Crows Feet':'Relaxes the upper-face muscles for an all-over smoother, refreshed look.',
+    '2 Areas — Forehead & Frown Lines':'Smooths the forehead and the lines between the brows.',
+    '1 Area — Any One Of The Above':'Targets one area of your choice — forehead, frown lines or crows feet.',
+    'Lower Face Jaw Slimming':'Relaxes the jaw muscles to soften a square jaw and slim the lower face.',
+    'Brow Lift':'Gently raises the brows to open up the eye area.',
+    'Cobbled Chin':'Smooths dimpled chin texture for a more even look.',
+    'Lip Flip':'Relaxes the upper lip so it shows a little more — a subtle fuller look without filler.',
+    'Lumi Eyes':'A brightening skin booster for the delicate under-eye area.',
+    'Seventy Hyal':'A hyaluronic booster for deep skin hydration and glow.',
+    'Profhilo':'Stimulates collagen and elastin for firmer, more hydrated skin.',
+    'Fat Dissolve Injections':'Help break down stubborn pockets of fat.',
+    'B12 Injection':'A quick vitamin boost to support energy and wellbeing.',
+    'Individual Lashes':'One-by-one extensions for a natural, customised look.',
+    'Hybrid Full Set':'A mix of classic and volume lashes for texture and soft fullness.',
+    'Russian Volume Full Set':'Fine, fanned lashes for a fuller, fluffier effect.',
+    'Mega Volume':'Ultra-full, dramatic volume lashes.',
+    'Infills':'Refresh your set to keep it looking full.',
+    'Mini Infills':'A quick top-up between appointments.',
+    'Bottom Lashes':'Lower-lash extensions for added definition.',
+    'Bottom Lashes Infills':'Refills for lower-lash extensions.',
+    'Lash Removal':'Safely removes extensions, returning lashes to natural.',
+    'Lash Lift & Tint':'Lifts and darkens your natural lashes — no extensions needed.',
+    'Lash Cleanse':'A gentle deep-clean to support lash health and retention.',
+    'Brow Lamination with Tint':'Smooths brows upward for a fuller, brushed-up shape with added tint.',
+    'Brow Wax':'Shapes and tidies the brow line.',
+    'Brow Tint':'Darkens and defines natural brow hairs.',
+    'Brow Wax & Tint':'Shape plus tint for defined brows.',
+    'Henna Brow':'A longer-lasting tint that also stains the skin for fuller-looking brows.',
+    'Mini Facial':'A quick refresh — cleanse, gentle exfoliation and hydration.',
+    'Dermaplan Facial':'Gently removes peach fuzz and dull surface skin for a smooth, glowing finish.',
+    'Microneedling Facial':'Fine micro-channels stimulate collagen to improve texture, tone and scarring.',
+    'Hydrofacial':'A deep cleanse, extraction and hydration infusion for an instant glow.',
+    'Luxury Casmara Facemask':'A firming, soothing modelling mask — a lovely add-on to any facial.'
+  };
+  document.querySelectorAll('.menu-row').forEach(function(row){
+    var nameEl=row.querySelector('.mr-name'); if(!nameEl) return;
+    var d=descs[nameEl.textContent.trim()]; if(!d) return;
+    var div=document.createElement('div'); div.className='mr-desc'; div.textContent=d;
+    nameEl.parentNode.appendChild(div);
   });
 
   /* ---- Magnetic CTA (desktop only) ---- */
