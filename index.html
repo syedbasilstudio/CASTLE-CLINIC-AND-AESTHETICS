@@ -338,6 +338,18 @@ header.nav.scrolled .menu-toggle span{background:var(--plum);}
 .reviews-nav button:hover{opacity:.6;}
 
 /* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(212,196,168,.35);}
+.g-tile{position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--linen-2);display:block;}
+.g-tile img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease);}
+.g-tile:hover img{transform:scale(1.05);}
+.g-tile .g-cap{position:absolute;left:0;right:0;bottom:0;padding:2.4rem 1rem 1rem;background:linear-gradient(rgba(45,27,45,0),rgba(45,27,45,.65));color:var(--linen);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;text-align:center;opacity:0;transition:opacity .5s var(--ease);}
+.g-tile:hover .g-cap{opacity:1;}
+@media(max-width:1024px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:640px){.gallery-grid{grid-template-columns:repeat(2,1fr);}.g-tile .g-cap{opacity:1;}}
+
+/* ============================================================
    INSTAGRAM
    ============================================================ */
 .ig-head{text-align:center;margin-bottom:3rem;}
@@ -712,12 +724,14 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
       <h3 style="font-size:1.3rem;color:var(--burgundy);margin:2.4rem 0 .5rem;font-weight:400;">Dermal Fillers</h3>
       <div class="menu-row"><div><div class="mr-name">Jaw Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Cheek Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Chin Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Chin Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Nasal Folds</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Filler</div><div class="mr-sub">0.5ml</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Filler</div><div class="mr-sub">1ml</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Filler Dissolve</div></div><div class="mr-dots"></div><div class="mr-price">From <span class="pound">£</span>90</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
 
+      <div class="menu-row"><div><div class="mr-name">Non-Surgical Rhinoplasty</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Tear Trough Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">3ml Filler</div><div class="mr-sub">Multi-area volumisation</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>350</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">5ml Filler</div><div class="mr-sub">Full-face volumisation</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>550</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
 
@@ -874,6 +888,25 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
       <button id="revNext" aria-label="Next review">&rarr;</button>
     </div>
     <div class="reviews-dots" id="revDots"></div>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section class="sec-pad" id="gallery" style="background:var(--linen-2);">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="eyebrow reveal">Results &amp; Gallery</span>
+      <h2 class="reveal">The work, up close.</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <a class="g-tile" href="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/a1e32043f_IMG_20260925_200057_864.jpg" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/a1e32043f_IMG_20260925_200057_864.jpg" alt="Non-surgical rhinoplasty before and after" loading="lazy"/><span class="g-cap">Non-Surgical Rhinoplasty</span></a>
+      <a class="g-tile" href="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/454ed9df0_IMG_20260925_200057_803.jpg" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/454ed9df0_IMG_20260925_200057_803.jpg" alt="Volume lash extensions close-up" loading="lazy"/><span class="g-cap">Volume Lashes</span></a>
+      <a class="g-tile" href="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/c2458a54d_IMG_20260925_200057_689.jpg" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/c2458a54d_IMG_20260925_200057_689.jpg" alt="Anti-wrinkle forehead before and after" loading="lazy"/><span class="g-cap">Anti-Wrinkle</span></a>
+      <a class="g-tile" href="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/2e8d174e9_IMG_20260925_200057_687.jpg" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/2e8d174e9_IMG_20260925_200057_687.jpg" alt="Tear trough treatment before and after" loading="lazy"/><span class="g-cap">Tear Trough</span></a>
+      <a class="g-tile" href="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/f91566d14_IMG_20260925_200057_688.jpg" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/f91566d14_IMG_20260925_200057_688.jpg" alt="Nose profile refinement before and after" loading="lazy"/><span class="g-cap">Profile Refinement</span></a>
+      <a class="g-tile" href="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/2b60aae58_IMG_20260925_200057_798.jpg" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/2b60aae58_IMG_20260925_200057_798.jpg" alt="Lash extensions detail" loading="lazy"/><span class="g-cap">Lash Extensions</span></a>
+    </div>
+    <p class="menu-note">Results vary from person to person. Images shared with client consent.</p>
   </div>
 </section>
 
@@ -1284,6 +1317,8 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
     'Jaw Filler':'Defines and sculpts the jawline for a sharper, more balanced profile.',
     'Cheek Filler':'Restores soft volume to the cheeks and gently lifts the mid-face.',
     'Chin Filler':'Refines the chin to balance your side profile.',
+    'Non-Surgical Rhinoplasty':'Subtly reshapes and refines the nose with filler — no surgery, minimal downtime.',
+    'Tear Trough Filler':'Softens under-eye hollows and dark circles for a fresher, more rested look.',
     'Nasal Folds':'Softens the lines that run from the nose to the corners of the mouth.',
     'Lip Filler':'Adds natural-looking volume, shape and hydration, tailored to you.',
     '3ml Filler':'A multi-area treatment — for example lips, cheeks and jaw — in a single visit.',
