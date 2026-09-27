@@ -13,7 +13,7 @@
 <meta property="og:title" content="Castle Clinic | Aesthetics & Beauty in Wimborne Minster" />
 <meta property="og:description" content="Personalised aesthetics and beauty treatments in Wimborne Minster. Subtle. Refined. Beautifully you." />
 <meta property="og:locale" content="en_GB" />
-<meta property="og:image" content="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/7de14f108_generated_20fa2268.jpg" />
+<meta property="og:image" content="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/3839cfb83_generated_image.png" />
 <meta name="twitter:card" content="summary_large_image" />
 
 <!-- Fonts -->
@@ -240,12 +240,9 @@ header.nav.scrolled .menu-toggle span{background:var(--plum);}
 .disc-cat{background:var(--linen);padding:2.6rem 1.6rem;cursor:pointer;transition:all .5s var(--ease);position:relative;overflow:hidden;}
 .disc-cat:hover{background:var(--plum);}
 .disc-cat:hover .dc-num,.disc-cat:hover .dc-name,.disc-cat:hover .dc-desc{color:var(--linen);}
-.disc-cat:hover .dc-img{opacity:.9;transform:scale(1.06);}
 .disc-cat .dc-num{font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;color:var(--taupe);transition:color .5s var(--ease);}
 .disc-cat .dc-name{font-family:var(--serif);font-size:1.5rem;color:var(--plum);margin:.8rem 0;transition:color .5s var(--ease);font-weight:400;}
 .disc-cat .dc-desc{font-size:.82rem;color:var(--muted);transition:color .5s var(--ease);}
-.disc-cat .dc-img{position:absolute;inset:0;opacity:0;transition:all .7s var(--ease);z-index:-1;}
-.disc-cat .dc-img img{width:100%;height:100%;object-fit:cover;}
 
 /* ============================================================
    FEATURED TREATMENTS
@@ -355,16 +352,10 @@ header.nav.scrolled .menu-toggle span{background:var(--plum);}
 .ig-head{text-align:center;margin-bottom:3rem;}
 .ig-head h2{font-size:clamp(2.2rem,5vw,3.6rem);color:var(--plum);font-weight:300;}
 .ig-head .handle{font-size:.8rem;letter-spacing:.2em;color:var(--taupe);margin-top:.6rem;}
-.ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--gold);}
-.ig-tile{aspect-ratio:1;overflow:hidden;position:relative;background:var(--linen);}
-.ig-tile img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);}
-.ig-tile:hover img{transform:scale(1.07);}
-.ig-tile::after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(45,27,45,0),rgba(45,27,45,.4));opacity:0;transition:opacity .5s var(--ease);}
-.ig-tile:hover::after{opacity:1;}
 .ig-cta-wrap{text-align:center;margin-top:3rem;}
 
 /* ============================================================
-   NOT SURE / CONCIERGE CTA
+   NOT SURE / CONSULTATION CTA
    ============================================================ */
 .notsure{text-align:center;max-width:680px;margin:0 auto;}
 .notsure h2{font-size:clamp(2.4rem,6vw,3.8rem);color:var(--plum);font-weight:300;margin-bottom:1.6rem;}
@@ -423,36 +414,6 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
 .foot-bottom{max-width:var(--maxw);margin:3rem auto 0;padding:1.6rem 8vw 0;border-top:1px solid rgba(212,196,168,.2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:rgba(252,249,243,.5);}
 
 /* ============================================================
-   FLOATING CONCIERGE
-   ============================================================ */
-.concierge-fab{position:fixed;right:1.6rem;bottom:1.6rem;z-index:800;display:flex;align-items:center;gap:.8em;background:var(--plum);color:var(--linen);padding:.95em 1.5em;border-radius:999px;box-shadow:0 12px 32px -12px rgba(45,27,45,.5);transition:all .5s var(--ease);min-height:44px;}
-.concierge-fab:hover{background:var(--burgundy);transform:translateY(-2px);}
-.concierge-fab .pulse{width:9px;height:9px;border-radius:50%;background:var(--gold);position:relative;}
-.concierge-fab .pulse::after{content:'';position:absolute;inset:0;border-radius:50%;background:var(--gold);animation:pulse 2.4s var(--ease-soft) infinite;}
-@keyframes pulse{0%{transform:scale(1);opacity:.7;}100%{transform:scale(3);opacity:0;}}
-.concierge-fab .label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;}
-.concierge-panel{position:fixed;right:1.6rem;bottom:5.5rem;z-index:850;width:min(400px,calc(100vw - 3rem));background:var(--linen);border:1px solid var(--gold);border-radius:22px;box-shadow:0 24px 60px -20px rgba(45,27,45,.4);overflow:hidden;transform:translateY(20px) scale(.96);opacity:0;visibility:hidden;transition:all .45s var(--ease);display:flex;flex-direction:column;max-height:min(72vh,620px);}
-.concierge-panel.open{transform:translateY(0) scale(1);opacity:1;visibility:visible;}
-.conc-header{background:var(--plum);color:var(--linen);padding:1.4rem 1.4rem;display:flex;justify-content:space-between;align-items:center;}
-.conc-header .title{font-family:var(--serif);font-size:1.2rem;}
-.conc-header .title small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;}
-.conc-close{color:var(--linen);font-size:1.4rem;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:background .3s;}
-.conc-close:hover{background:rgba(252,249,243,.15);}
-.conc-body{padding:1.6rem;overflow-y:auto;flex:1;}
-.conc-msg{font-family:var(--serif);font-size:1.25rem;color:var(--plum);font-style:italic;margin-bottom:1.2rem;line-height:1.4;}
-.conc-opts{display:flex;flex-direction:column;gap:.6rem;}
-.conc-opt{padding:1em 1.2em;border:1px solid rgba(212,196,168,.6);border-radius:12px;font-size:.82rem;letter-spacing:.06em;color:var(--plum);text-align:left;transition:all .35s var(--ease);background:var(--linen);min-height:44px;}
-.conc-opt:hover{background:var(--plum);color:var(--linen);border-color:var(--plum);transform:translateX(4px);}
-.conc-result{display:none;animation:fadeUp .5s var(--ease);}
-.conc-result.active{display:block;}
-.conc-result .rlabel{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--taupe);margin-bottom:1rem;}
-.conc-treat{display:flex;justify-content:space-between;align-items:baseline;padding:1rem 0;border-bottom:1px solid rgba(212,196,168,.4);}
-.conc-treat .tn{font-family:var(--serif);font-size:1.15rem;color:var(--plum);}
-.conc-treat .tp{font-family:var(--serif);color:var(--burgundy);}
-.conc-note{font-size:.72rem;color:var(--taupe);font-style:italic;margin-top:1.2rem;line-height:1.5;}
-.conc-back{margin-top:1.4rem;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--burgundy);}
-
-/* ============================================================
    MOBILE STICKY BAR
    ============================================================ */
 .mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:700;display:none;background:rgba(252,249,243,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(212,196,168,.5);padding:.6rem;padding-bottom:calc(.6rem + env(safe-area-inset-bottom));}
@@ -482,11 +443,9 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
   .disc-cats{grid-template-columns:repeat(2,1fr);}
   .featured-grid{grid-template-columns:repeat(2,1fr);}
   .exp{grid-template-columns:repeat(2,1fr);gap:3.5rem 2rem;}
-  .ig-grid{grid-template-columns:repeat(2,1fr);}
   .foot-grid{grid-template-columns:1fr 1fr;}
   .mobile-bar{display:flex;}
   body{padding-bottom:64px;}
-  .concierge-fab{bottom:5.4rem;}
 }
 @media(max-width:640px){
   .wrap{padding:0 6vw;}
@@ -497,15 +456,12 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
   .disc-cats{grid-template-columns:1fr;}
   .featured-grid{grid-template-columns:1fr;}
   .exp{grid-template-columns:1fr;}
-  .ig-grid{grid-template-columns:repeat(2,1fr);}
   .foot-grid{grid-template-columns:1fr;gap:2.4rem;}
   .menu-row{flex-wrap:wrap;}
   .menu-row .mr-dots{display:none;}
   .menu-row .mr-price{margin-left:auto;}
   .menu-row .mr-book{position:static;transform:none;opacity:1;margin-top:.8rem;align-self:flex-start;}
   .elena-text .bgword{top:-2.5rem;left:0;font-size:3.4rem;}
-  .concierge-fab .label{display:none;}
-  .concierge-fab{padding:1em;}
   .mobile-menu a{font-size:1.9rem;}
 }
 
@@ -567,7 +523,7 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
 <!-- ===================== HERO ===================== -->
 <section class="hero" id="hero">
   <div class="hero-img">
-    <img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/7de14f108_generated_20fa2268.jpg" alt="Editorial beauty portrait with natural skin and soft warm light" fetchpriority="high" />
+    <img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/3839cfb83_generated_image.png" alt="Calm, minimal treatment setting at Castle Clinic" fetchpriority="high" />
   </div>
   <div class="hero-content">
     <div class="hero-loc">Wimborne Minster &nbsp;&bull;&nbsp; Dorset</div>
@@ -621,31 +577,26 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
     </div>
     <div class="disc-cats reveal">
       <div class="disc-cat" data-jump="dermal">
-        <div class="dc-img"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/6f09a0aad_generated_986053b7.jpg" alt="" loading="lazy"/></div>
         <div class="dc-num">01</div>
         <div class="dc-name">Facial Aesthetics</div>
         <div class="dc-desc">Dermal fillers &amp; anti-wrinkle treatments.</div>
       </div>
       <div class="disc-cat" data-jump="skin">
-        <div class="dc-img"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/5ab567608_generated_9371aa67.jpg" alt="" loading="lazy"/></div>
         <div class="dc-num">02</div>
         <div class="dc-name">Skin Boosters</div>
         <div class="dc-desc">Hydration &amp; luminosity for the skin.</div>
       </div>
       <div class="disc-cat" data-jump="body">
-        <div class="dc-img"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/50771698d_generated_5ddc2f38.jpg" alt="" loading="lazy"/></div>
         <div class="dc-num">03</div>
         <div class="dc-name">Body &amp; Wellness</div>
         <div class="dc-desc">Fat dissolve &amp; vitamin injections.</div>
       </div>
       <div class="disc-cat" data-jump="lashes">
-        <div class="dc-img"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/1f02e4266_generated_e66d681a.jpg" alt="" loading="lazy"/></div>
         <div class="dc-num">04</div>
         <div class="dc-name">Lashes &amp; Brows</div>
         <div class="dc-desc">Definition, lift &amp; natural fullness.</div>
       </div>
       <div class="disc-cat" data-jump="facials">
-        <div class="dc-img"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/50771698d_generated_5ddc2f38.jpg" alt="" loading="lazy"/></div>
         <div class="dc-num">05</div>
         <div class="dc-name">Facials</div>
         <div class="dc-desc">Refresh, resurface &amp; restore glow.</div>
@@ -725,7 +676,7 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
       <div class="menu-row"><div><div class="mr-name">Jaw Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Cheek Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Chin Filler</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
-      <div class="menu-row"><div><div class="mr-name">Nasal Folds</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
+      <div class="menu-row"><div><div class="mr-name">Nasolabial Folds</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Filler</div><div class="mr-sub">0.5ml</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>120</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Filler</div><div class="mr-sub">1ml</div></div><div class="mr-dots"></div><div class="mr-price"><span class="pound">£</span>150</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
       <div class="menu-row"><div><div class="mr-name">Lip Filler Dissolve</div></div><div class="mr-dots"></div><div class="mr-price">From <span class="pound">£</span>90</div><a class="mr-book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">Book</a></div>
@@ -848,7 +799,7 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
       <span class="bgword">Expertise</span>
       <span class="eyebrow reveal">Behind the Clinic</span>
       <h2 class="reveal">Meet Elena.</h2>
-      <p class="reveal">Castle Clinic is built around a personal approach. Elena takes the time to understand what each client wants, explains the treatment process clearly and creates an experience designed to leave you feeling comfortable and confident.</p>
+      <p class="reveal">With 9 years&rsquo; experience in the beauty industry and 4 years specialising in aesthetics, Elena has built Castle Clinic around a simple philosophy: treatments should enhance what makes you <em>you</em>, rather than change it. With a friendly, personal approach, every treatment is tailored to the individual, with a focus on natural-looking results and helping clients feel confident and comfortable.</p>
       <div class="sig reveal">Castle Clinic</div>
     </div>
   </div>
@@ -918,12 +869,6 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
       <h2 class="reveal">Follow the Castle Clinic story.</h2>
       <div class="handle reveal">A glimpse of treatments, results &amp; the clinic.</div>
     </div>
-    <div class="ig-grid reveal">
-      <a class="ig-tile" href="https://www.instagram.com/castleclinic7?stkn=MWV5cjdqd3EwajFmdw==" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/6f09a0aad_generated_986053b7.jpg" alt="Facial aesthetics editorial" loading="lazy"/></a>
-      <a class="ig-tile" href="https://www.instagram.com/castleclinic7?stkn=MWV5cjdqd3EwajFmdw==" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/5ab567608_generated_9371aa67.jpg" alt="Skin booster detail" loading="lazy"/></a>
-      <a class="ig-tile" href="https://www.instagram.com/castleclinic7?stkn=MWV5cjdqd3EwajFmdw==" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/1f02e4266_generated_e66d681a.jpg" alt="Lashes and brows" loading="lazy"/></a>
-      <a class="ig-tile" href="https://www.instagram.com/castleclinic7?stkn=MWV5cjdqd3EwajFmdw==" target="_blank" rel="noopener"><img src="https://media.base44.com/images/public/6aa27f9ed7d24ca29ab8ae54/50771698d_generated_5ddc2f38.jpg" alt="Facial treatment" loading="lazy"/></a>
-    </div>
     <div class="ig-cta-wrap reveal">
       <a href="https://www.instagram.com/castleclinic7?stkn=MWV5cjdqd3EwajFmdw==" target="_blank" rel="noopener" class="btn btn-outline">Follow on Instagram &#8599;</a>
     </div>
@@ -933,12 +878,11 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
 <!-- ===================== NOT SURE ===================== -->
 <section class="sec-pad" id="not-sure" style="background:var(--linen-2);">
   <div class="wrap notsure">
-    <span class="eyebrow reveal">Need Guidance?</span>
-    <h2 class="reveal">Not sure where to start?</h2>
-    <p class="reveal">Every client is different. If you know what you'd like to improve but aren't sure which treatment to choose, our concierge can help you explore your options.</p>
+    <span class="eyebrow reveal">Free Consultation</span>
+    <h2 class="reveal">Not sure which treatment is right for you?</h2>
+    <p class="reveal">Book in for a free consultation and we can discuss your concerns, what you'd like to achieve and the treatments that may be suitable for you.</p>
     <div class="btns reveal">
-      <button class="btn btn-primary" id="openConcierge2">Ask Castle Concierge &#10022;</button>
-      <a href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener" class="btn btn-outline">Book a Consultation</a>
+      <a href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener" class="btn btn-primary">Book a Free Consultation</a>
     </div>
   </div>
 </section>
@@ -1013,7 +957,7 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">How do I know which treatment is right for me?<span class="icon" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner">Our Castle Concierge can help you explore your options, or you can book a consultation. Treatment suitability is assessed individually.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Book in for a free consultation and we can discuss your concerns, what you'd like to achieve and the treatments that may be suitable for you. Treatment suitability is assessed individually.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">Can I book through Fresha?<span class="icon" aria-hidden="true"></span></button>
@@ -1021,7 +965,7 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">What should I do if I am unsure which treatment to choose?<span class="icon" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner">If you're unsure, try the Castle Concierge for guided suggestions, or book a consultation so we can talk through what you'd like to achieve.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">If you're unsure, book a free consultation so we can talk through your concerns, what you'd like to achieve and the treatments that may be suitable for you.</div></div>
       </div>
     </div>
   </div>
@@ -1061,49 +1005,6 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
   </div>
 </footer>
 
-<!-- ===================== FLOATING CONCIERGE ===================== -->
-<button class="concierge-fab" id="conciergeFab" aria-label="Open Castle Concierge" aria-expanded="false">
-  <span class="pulse" aria-hidden="true"></span>
-  <span class="label">Castle Concierge &#10022;</span>
-</button>
-
-<div class="concierge-panel" id="conciergePanel" role="dialog" aria-label="Castle Concierge">
-  <div class="conc-header">
-    <div class="title">Castle Concierge <small>Guided discovery</small></div>
-    <button class="conc-close" id="concClose" aria-label="Close concierge">&times;</button>
-  </div>
-  <div class="conc-body" id="concBody">
-    <!-- Step 1 -->
-    <div class="conc-step" data-step="1">
-      <p class="conc-msg">Welcome to Castle Clinic. What would you like to explore?</p>
-      <div class="conc-opts">
-        <button class="conc-opt" data-cat="lips">Lips</button>
-        <button class="conc-opt" data-cat="antiwrinkle">Anti-Wrinkle</button>
-        <button class="conc-opt" data-cat="skin">Skin</button>
-        <button class="conc-opt" data-cat="lashbrow">Lashes &amp; Brows</button>
-        <button class="conc-opt" data-cat="facials">Facials</button>
-        <button class="conc-opt" data-cat="body">Body</button>
-        <button class="conc-opt" data-cat="unsure">I'm not sure</button>
-      </div>
-    </div>
-    <!-- Step 2 -->
-    <div class="conc-step" data-step="2" style="display:none">
-      <p class="conc-msg">What would you like to achieve?</p>
-      <div class="conc-opts" id="step2opts"></div>
-      <button class="conc-back" data-back="1">&larr; Back</button>
-    </div>
-    <!-- Step 3 -->
-    <div class="conc-step" data-step="3" style="display:none">
-      <div class="conc-result active" id="concResult"></div>
-      <div style="margin-top:1.6rem">
-        <a href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%">Book Your Appointment</a>
-      </div>
-      <p class="conc-note">Castle Concierge provides general information only. Treatment suitability is confirmed by the clinic.</p>
-      <button class="conc-back" data-back="1">&larr; Start again</button>
-    </div>
-  </div>
-</div>
-
 <!-- ===================== MOBILE STICKY BAR ===================== -->
 <div class="mobile-bar">
   <a class="mb-btn book" href="https://www.fresha.com/en-GB/a/castle-clinic-wimborne-minster-24-bankes-road-g9f1x8dr?pid=804407&utm_id=97759_v0_s00_e0_tv3&fbclid=IwVERDUAUNMhpwZG9mAWV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDDM1MDY4NTUzMTcyOAABHtCYiZzodPsPOFq9ZzDJwNRtJgZzBW0a9BaZuPv2IadUUTmtrbf8AJi7L3Mw_aem_HV12NCQr6Yw8lAlRd2GEBg" target="_blank" rel="noopener">
@@ -1112,9 +1013,6 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
   <a class="mb-btn" href="tel:+447376734662">
     <svg viewBox="0 0 24 24"><path d="M5 4 L9 4 L11 9 L8.5 10.5 C9.5 13 11 14.5 13.5 15.5 L15 13 L20 15 L20 19 C20 20 19 21 18 21 C10 21 3 14 3 6 C3 5 4 4 5 4 Z" stroke-linecap="round" stroke-linejoin="round"/></svg>Call
   </a>
-  <button class="mb-btn" id="mbConcierge">
-    <svg viewBox="0 0 24 24"><path d="M12 3 L13.5 9 L20 10.5 L13.5 12 L12 18 L10.5 12 L4 10.5 L10.5 9 Z" stroke-linecap="round" stroke-linejoin="round"/></svg>Concierge
-  </button>
 </div>
 
 <script>
@@ -1227,90 +1125,6 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
   rt.addEventListener('mouseenter', function(){ clearInterval(revTimer); });
   rt.addEventListener('mouseleave', resetRev);
 
-  /* ---- Concierge ---- */
-  var fab=document.getElementById('conciergeFab'), panel=document.getElementById('conciergePanel'), concClose=document.getElementById('concClose');
-  var openConc2=document.getElementById('openConcierge2'), mbConc=document.getElementById('mbConcierge');
-  function openConc(){ panel.classList.add('open'); fab.setAttribute('aria-expanded','true'); showStep(1); }
-  function closeConc(){ panel.classList.remove('open'); fab.setAttribute('aria-expanded','false'); }
-  fab.addEventListener('click', function(){ panel.classList.contains('open')?closeConc():openConc(); });
-  if(openConc2) openConc2.addEventListener('click', openConc);
-  if(mbConc) mbConc.addEventListener('click', openConc);
-  concClose.addEventListener('click', closeConc);
-
-  var flow={
-    lips:{q:'What would you like to achieve?',opts:[
-      {l:'More definition',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Filler',s:'1ml',p:'£150'}]},
-      {l:'Fuller appearance',t:[{n:'Lip Filler',s:'1ml',p:'£150'},{n:'Lip Filler',s:'0.5ml',p:'£120'}]},
-      {l:'Explore options',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Filler',s:'1ml',p:'£150'},{n:'3ml Filler',p:'£350'},{n:'Lip Flip',p:'£80'}]},
-      {l:'Not sure',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Flip',p:'£80'}]}
-    ]},
-    antiwrinkle:{q:'What would you like to achieve?',opts:[
-      {l:'Smoother forehead',t:[{n:'2 Areas — Forehead & Frown',p:'£200'},{n:'3 Areas',p:'£220'}]},
-      {l:'Soften lines',t:[{n:'1 Area',p:'£180'},{n:'2 Areas — Forehead & Frown',p:'£200'}]},
-      {l:'Brow lift',t:[{n:'Brow Lift',p:'£80'}]},
-      {l:'Explore options',t:[{n:'1 Area',p:'£180'},{n:'2 Areas',p:'£200'},{n:'Lower Face Jaw Slimming',p:'£220'}]}
-    ]},
-    skin:{q:'What would you like to achieve?',opts:[
-      {l:'Brighter-looking skin',t:[{n:'Lumi Eyes',p:'£120'},{n:'Seventy Hyal',p:'£145'}]},
-      {l:'Smoother texture',t:[{n:'Microneedling Facial',p:'£110'},{n:'Dermaplan Facial',p:'£60'}]},
-      {l:'Skin hydration',t:[{n:'Profhilo',p:'£195'},{n:'Seventy Hyal',p:'£145'}]},
-      {l:'Explore options',t:[{n:'Lumi Eyes',p:'£120'},{n:'Seventy Hyal',p:'£145'},{n:'Profhilo',p:'£195'}]}
-    ]},
-    lashbrow:{q:'What would you like to achieve?',opts:[
-      {l:'Fuller lashes',t:[{n:'Individual Lashes',p:'£55'},{n:'Russian Volume Full Set',p:'£65'}]},
-      {l:'Defined brows',t:[{n:'Brow Lamination with Tint',p:'£40'},{n:'Henna Brow',p:'£25'}]},
-      {l:'Lift & tint',t:[{n:'Lash Lift & Tint',p:'£40'}]},
-      {l:'Explore options',t:[{n:'Lash Lift & Tint',p:'£40'},{n:'Brow Wax & Tint',p:'£20'}]}
-    ]},
-    facials:{q:'What would you like to achieve?',opts:[
-      {l:'Refresh',t:[{n:'Mini Facial',p:'£40'}]},
-      {l:'Glow',t:[{n:'Hydrofacial',p:'£70'},{n:'Dermaplan Facial',p:'£60'},{n:'Luxury Casmara Facemask',p:'£10'}]},
-      {l:'Deep resurface',t:[{n:'Microneedling Facial',p:'£110'}]},
-      {l:'Explore options',t:[{n:'Mini Facial',p:'£40'},{n:'Dermaplan Facial',p:'£60'},{n:'Microneedling Facial',p:'£110'}]}
-    ]},
-    body:{q:'What would you like to achieve?',opts:[
-      {l:'Fat dissolve',t:[{n:'Fat Dissolve Injections',s:'Lemon Bottle or Lipolax',p:'From £50'}]},
-      {l:'B12 energy',t:[{n:'B12 Injection',p:'£25'},{n:'B12 Course of 5',p:'£100'}]},
-      {l:'Explore options',t:[{n:'Fat Dissolve Injections',p:'From £50'},{n:'B12 Injection',p:'£25'}]}
-    ]},
-    unsure:{q:'What would you like to improve?',opts:[
-      {l:'My lips',t:[{n:'Lip Filler',s:'0.5ml',p:'£120'},{n:'Lip Flip',p:'£80'}]},
-      {l:'Lines & wrinkles',t:[{n:'1 Area Anti-Wrinkle',p:'£180'},{n:'2 Areas Anti-Wrinkle',p:'£200'}]},
-      {l:'My skin',t:[{n:'Lumi Eyes',p:'£120'},{n:'Profhilo',p:'£195'}]},
-      {l:'My lashes & brows',t:[{n:'Lash Lift & Tint',p:'£40'},{n:'Brow Lamination with Tint',p:'£40'}]},
-      {l:'Still deciding',t:[{n:'Consultation',s:'Free · 20 mins',p:'via Fresha'}]}
-    ]}
-  };
-  var selCat=null;
-  function showStep(n){
-    document.querySelectorAll('.conc-step').forEach(function(s){ s.style.display = s.getAttribute('data-step')===String(n)?'block':'none'; });
-  }
-  document.querySelectorAll('.conc-opt[data-cat]').forEach(function(o){
-    o.addEventListener('click', function(){
-      selCat=o.getAttribute('data-cat');
-      var f=flow[selCat]; if(!f) return;
-      var s2=document.getElementById('step2opts'); s2.innerHTML='';
-      f.opts.forEach(function(opt,i){
-        var b=document.createElement('button'); b.className='conc-opt'; b.textContent=opt.l;
-        b.addEventListener('click', function(){ buildResult(opt.t); showStep(3); });
-        s2.appendChild(b);
-      });
-      document.querySelector('.conc-step[data-step="2"] .conc-msg').textContent=f.q;
-      showStep(2);
-    });
-  });
-  function buildResult(treats){
-    var r=document.getElementById('concResult');
-    var html='<div class="rlabel">Based on what you\'ve selected, you may want to explore:</div>';
-    treats.forEach(function(t){
-      html+='<div class="conc-treat"><span class="tn">'+t.n+(t.s?' <span style="font-size:.8rem;color:var(--taupe)">'+t.s+'</span>':'')+'</span><span class="tp">'+t.p+'</span></div>';
-    });
-    r.innerHTML=html;
-  }
-  document.querySelectorAll('.conc-back').forEach(function(b){
-    b.addEventListener('click', function(){ showStep(parseInt(b.getAttribute('data-back'),10)); });
-  });
-
   /* ---- Treatment descriptions ---- */
   var descs={
     'Consultation':'A relaxed 20-minute chat about your goals, with honest advice on the right treatment for you.',
@@ -1319,7 +1133,7 @@ footer{background:var(--plum);color:var(--linen);padding:5rem 0 2.5rem;}
     'Chin Filler':'Refines the chin to balance your side profile.',
     'Non-Surgical Rhinoplasty':'Subtly reshapes and refines the nose with filler — no surgery, minimal downtime.',
     'Tear Trough Filler':'Softens under-eye hollows and dark circles for a fresher, more rested look.',
-    'Nasal Folds':'Softens the lines that run from the nose to the corners of the mouth.',
+    'Nasolabial Folds':'Softens the lines that run from the nose to the corners of the mouth.',
     'Lip Filler':'Adds natural-looking volume, shape and hydration, tailored to you.',
     '3ml Filler':'A multi-area treatment — for example lips, cheeks and jaw — in a single visit.',
     '5ml Filler':'Full-face volumisation to restore overall balance and harmony.',
